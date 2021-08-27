@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore ${{github.workspace}}/WebSiteAdminAuth/WebsiteAdmin.Auth/WebsiteAdmin.Auth.csproj
+      run: dotnet restore ${{github.workspace}}/WebsiteAdmin.Auth/WebsiteAdmin.Auth.csproj
     - name: Build
       run: dotnet build ${{github.workspace}}/WebsiteAdmin.Auth/WebsiteAdmin.Auth/WebsiteAdmin.Auth.csproj --no-restore
     - name: Test
