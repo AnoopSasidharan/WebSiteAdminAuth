@@ -77,7 +77,6 @@ namespace WebsiteAdmin.Auth.Controllers
             {
                 return BadRequest();
             }
-
         }
         [HttpPost("Logout")]
         public async Task<ActionResult> LogoutUser([FromQuery] string username)
